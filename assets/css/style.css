@@ -1,0 +1,144 @@
+/* --- CẤU HÌNH CHUNG --- */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- PRODUCT CARD (THẺ SẢN PHẨM) --- */
+.card-product {
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-product:hover {
+    transform: translateY(-5px); /* Bay lên nhẹ khi di chuột */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Đổ bóng */
+}
+
+.card-product .card-img-top {
+    height: 220px;
+    object-fit: contain; /* Giúp ảnh giày không bị méo */
+    padding: 20px;
+    transition: transform 0.5s;
+}
+
+.card-product:hover .card-img-top {
+    transform: scale(1.05); /* Phóng to ảnh nhẹ khi di chuột */
+}
+
+.card-product .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    height: 40px; /* Cố định chiều cao tên để các thẻ bằng nhau */
+    overflow: hidden;
+}
+
+.text-price {
+    color: #d70018; /* Màu đỏ của giá tiền */
+    font-weight: 700;
+}
+
+/* --- BADGE GIẢM GIÁ --- */
+/* Nhãn giảm giá nằm đè lên góc trái ảnh sản phẩm */
+.badge-sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #dc3545; /* Màu đỏ Bootstrap */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Giá cũ bị gạch ngang */
+.price-old {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+/* Giá mới (giá bán) */
+.price-new {
+    color: #d70018; /* Đỏ tươi */
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* --- NAVBAR (MENU) --- */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* --- ADMIN SIDEBAR (Dùng cho trang quản trị) --- */
+.sidebar {
+    min-height: 100vh;
+    width: 260px;
+    background: #212529;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #adb5bd;
+    display: block;
+    border-left: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #343a40;
+    color: #fff;
+    border-left: 3px solid #0d6efd; /* Vạch xanh bên trái */
+}
+
+/* Đẩy nội dung admin sang phải để không bị sidebar che */
+.admin-content {
+    margin-left: 260px;
+    padding: 30px;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #212529;
+    color: #adb5bd;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+/* Hiệu ứng khi di chuột vào thẻ Dashboard */
+.card-hover {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.card-hover:hover {
+    transform: scale(1.05); /* Phóng to nhẹ */
+    filter: brightness(1.1); /* Sáng lên một chút */
+}

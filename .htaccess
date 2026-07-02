@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteBase /shop_ban_hang/
+
+# Bỏ qua nếu là file hoặc thư mục vật lý có thực (ví dụ như assets, css, js)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite URL cấu trúc /api/{Controller}/{Action}
+# Ví dụ: GET /api/product/index => index.php?controller=apiProduct&action=index
+RewriteRule ^api/([^/]+)/([^/]+)/?$ index.php?controller=api$1&action=$2 [L,QSA]
+
+# Tuỳ chọn fallback: cấu trúc /api/{Controller} (mặc định action là index)
+# Ví dụ: GET /api/product => index.php?controller=apiProduct&action=index
+RewriteRule ^api/([^/]+)/?$ index.php?controller=api$1&action=index [L,QSA]
+
+# Các thiết lập phía dưới nếu có web Frontend tĩnh (React/Vue/...)

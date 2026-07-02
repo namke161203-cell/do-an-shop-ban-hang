@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuyết trình công nghệ phần mền demo</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/moon.min.css">
+    
+    <style>
+        :root {
+            --r-main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --r-heading-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --software-color: #67e8f9;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none !important;
+            font-weight: 700;
+        }
+        .highlight { color: #3498db; }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            font-size: 0.8em;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #3498db;
+        }
+        .reveal section img {
+            margin: 0 auto;
+            max-width: 80%;
+            height: auto;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);
+        }
+        /* Layout Slide đầu */
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 20px;
+            text-align: left;
+            align-items: end;
+        }
+        .hero-title h1 {
+            font-size: 2.3em !important;
+            line-height: 1.1;
+            margin: 0 !important;
+            color: #ffffff;
+        }
+        .hero-title .software-text {
+            color: var(--software-color);
+        }
+        .hero-title .sub-info {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            font-size: 0.55em;
+            color: #d1d5db;
+        }
+        .hero-members {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            backdrop-filter: blur(8px);
+            border-left: 2px solid var(--software-color);
+            font-size: 0.5em;
+        }
+        .hero-members p {
+            color: var(--software-color);
+            font-weight: bold;
+            margin-bottom: 12px !important;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <section data-background-image="photo-1451187580459-43490279c0fa.avif" data-background-opacity="0.7" data-background-color="#000">
+                <div class="hero-container">
+                    <div class="hero-title">
+                        <h1>CÔNG NGHỆ
+                            <span class="software-text">PHẦN MỀM<br></span>
+                        </h1>
+                        <div class="sub-info">
+                            Tổng quan về Công nghệ Phần mềm: Khái niệm, Phân loại và Chất lượng
+                        </div>
+                    </div>
+                    <div class="hero-members">
+                        <p>THÀNH VIÊN NHÓM:</p>
+                        <div style="line-height: 1.8; color: #fff;">
+                            1. Đinh Hải Nam<br>
+                            2. Trần Tiến Minh<br>
+                            3. Nguyễn Trung Chuyển<br>
+                            4. Vũ Duy Anh
+                        </div>
+                    </div>
+                </div>
+                <p style="font-size: 0.4em; opacity: 0.5; margin-top: 50px;">Nhấn Space để bắt đầu</p>
+            </section>
+
+            <section>
+                <section data-background-color="#1a1a1a">
+                    <h2 class="highlight">PHẦN 1: TỔNG QUAN VỀ PHẦN MỀM</h2>
+                </section>
+
+                <section>
+                    <h3>Khái niệm Phần mềm (Software)</h3>
+                    <div class="r-hstack">
+                        <div style="text-align: left;">
+                            <ul style="font-size: 0.8em;">
+                                <li class="fragment"><strong>Phần mềm (Software) là:</strong>  tập hợp các chỉ dẫn, chương trình và dữ liệu được lập trình để điều khiển phần cứng máy tính thực hiện các nhiệm vụ cụ thể, hoạt động như "bộ não" vô hình giúp người dùng tương tác và sử dụng thiết bị.</li>
+                            </ul>
+                          
+                        </div>
+                        <div class="fragment">
+                            <img src="Screenshot 2026-02-03 150656.png" alt="Khái niệm Phần mềm">
+                            <p style="font-size: 0.5em; opacity: 0.7;"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Đặc điểm đặc trưng</h3>
+                    <div class="grid-3">
+                        <div class="card fragment"><strong>Độ bền</strong><br>Không mài mòn vật lý.</div>
+                        <div class="card fragment"><strong>Nhân bản</strong><br>Sao chép chi phí thấp.</div>
+                        <div class="card fragment"><strong>Độ phức tạp</strong><br>Khó hình dung toàn hệ thống.</div>
+                        <div class="card fragment"><strong>Nhạy cảm</strong><br>Thay đổi nhỏ, ảnh hưởng lớn.</div>
+                        <div class="card fragment"><strong>Yếu tố con người</strong><br>Phụ thuộc quy trình phát triển.</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Vai trò của Phần mềm</h3>
+                    <div class="r-hstack">
+                        <ul style="font-size: 0.85em; text-align: left;">
+                            <li>đóng vai trò trung gian thiết yếu giữa người dùng và phần cứng, điều khiển hoạt động, quản lý tài nguyên máy tính và thực hiện các tác vụ cụ thể. Vai trò cốt lõi bao gồm vận hành phần cứng (hệ điều hành), tự động hóa công việc, tối ưu hóa năng suất, kết nối, giải trí và xử lý dữ liệu phức tạp.</li>
+                           
+                        </ul>
+                        <div class="fragment">
+                         
+                            <p style="font-size: 0.5em; opacity: 0.7;"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Cấu trúc chi tiết (3 Thành phần)</h3>
+                    <div class="r-vstack">
+                        <div class="grid-3" style="font-size: 0.6em;">
+                            <div class="card fragment">
+                                <h4>1. Chương trình</h4>
+                                <p>Mã nguồn & Mã thực thi. Thuật toán, giao diện.</p>
+                            </div>
+                            <div class="card fragment">
+                                <h4>2. Dữ liệu</h4>
+                                <p>Thông tin trung gian, CSDL. Quyết định độ chính xác.</p>
+                            </div>
+                            <div class="card fragment">
+                                <h4>3. Tài liệu</h4>
+                                <p>Yêu cầu, thiết kế, HDSD. Giúp bảo trì dễ dàng.</p>
+                            </div>
+                        </div>
+                        <div class="fragment" style="margin-top: 20px;">
+                            <img src="chuynn.png" alt="Cấu trúc Phần mềm">
+                            <p style="font-size: 0.5em; opacity: 0.7;"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Ví dụ minh họa - Phần mềm Quản lý bán hàng</h3>
+                    <div class="r-hstack">
+                        <table style="font-size: 0.6em; text-align: left;">
+                            <thead>
+                                <tr>
+                                    <th>Thành phần</th>
+                                    <th>Minh họa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="fragment"><td>Chương trình</td><td>Module quản lý sản phẩm, hóa đơn, thống kê.</td></tr>
+                                <tr class="fragment"><td>Dữ liệu</td><td>Danh sách khách hàng, lịch sử giao dịch.</td></tr>
+                                <tr class="fragment"><td>Tài liệu</td><td>Sổ tay hướng dẫn, tài liệu kỹ thuật.</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="fragment">
+                            <img src="Screenshot 2026-02-03 15165312424124124.png" alt="Phần mềm Quản lý bán hàng">
+                            <p style="font-size: 0.5em; opacity: 0.7;"></p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+    <section data-background-color="#002b36">
+        <h2 class="highlight">PHẦN 2: PHÂN LOẠI PHẦN MỀM</h2>
+        <p>Thế giới phần mềm đa dạng và phong phú</p>
+    </section>
+
+    <section>
+        <div class="hero-container" style="grid-template-columns: 1fr 1.2fr; align-items: center;">
+            <div>
+                <img src="lunix.avif" alt="System Software">
+                <p style="font-size: 0.4em; opacity: 0.6;"></p>
+            </div>
+            <div style="text-align: left;">
+                <h3 class="highlight">1. Phần mềm Hệ thống</h3>
+                <ul style="font-size: 0.7em;">
+                    <li class="fragment"><strong>Định nghĩa:</strong> Quản lý tài nguyên phần cứng và cung cấp nền tảng cho các ứng dụng khác.</li>
+                    <li class="fragment"><strong>Ví dụ:</strong> Hệ điều hành (Windows, Android), Trình điều khiển thiết bị (Drivers), Trình biên dịch.</li>
+                    <li class="fragment card" style="margin-top: 15px;">Hoạt động ẩn bên dưới, người dùng ít khi tương tác trực tiếp.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="hero-container" style="grid-template-columns: 1.2fr 1fr; align-items: center;">
+            <div style="text-align: left;">
+                <h3 class="highlight">2. Phần mềm Ứng dụng</h3>
+                <ul style="font-size: 0.7em;">
+                    <li class="fragment"><strong>Định nghĩa:</strong> Giải quyết các công việc cụ thể của người dùng.</li>
+                    <li class="fragment"><strong>Ví dụ:</strong> Microsoft Office, Photoshop, Trình duyệt web (Chrome), Spotify.</li>
+                    <li class="fragment card" style="margin-top: 15px;">Chiếm số lượng lớn nhất và phổ biến nhất hiện nay.</li>
+                </ul>
+            </div>
+            <div>
+                <img src="game.png" alt="Application Software">
+                <p style="font-size: 0.4em; opacity: 0.6;"></p>
+            </div>
+        </div>
+    </section>
+     <section>
+        <div class="hero-container" style="grid-template-columns: 1.2fr 1fr; align-items: center;">
+            <div style="text-align: left;">
+                <h3 class="highlight">3.Phần mềm Kỹ thuật và Khoa học</h3>
+                <ul style="font-size: 0.7em;">
+                    <li class="fragment"><strong>Đặc điểm: </strong>Sử dụng các thuật toán "nhai số" (number-crunching) cực mạnh.</li>
+                    <li class="fragment"><strong>Ứng dụng:</strong> Mô phỏng các hiện tượng vật lý, thiên văn, thiết kế vi mạch, phân tích dữ liệu sinh học và hệ thống hỗ trợ thiết kế máy tính (CAD/CAM).</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section>
+        <h3>4. Nhúng & Thời gian thực</h3>
+        <div class="grid-3">
+            <div class="card fragment">
+                <h4>Hệ thống Nhúng</h4>
+                <p>Nằm trong ROM các thiết bị: Máy giặt, Lò vi sóng, Smart Watch.</p>
+                <img src="photo-1518770660439-4636190af475.avif" style="border:none; box-shadow:none; height:120px;">
+            </div>
+            <div class="card fragment">
+                <h4>Thời gian thực (Cứng)</h4>
+                <p>Phản hồi ngay lập tức: Hệ thống phanh xe, điều khiển tên lửa.</p>
+                <img src="photo-1555664424-778a1e5e1b48.avif" style="border:none; box-shadow:none; height:120px;">
+            </div>
+            <div class="card fragment">
+                <h4>Thời gian thực (Mềm)</h4>
+                <p>Chấp nhận độ trễ nhỏ: Phát Video trực tuyến, game online.</p>
+                <img src="photo-1542751371-adc38448a05e.avif" style="border:none; box-shadow:none; height:120px;">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>5. Theo mô hình kinh doanh</h3>
+        <div class="r-hstack" style="gap: 20px;">
+            <div class="card fragment" style="width: 45%; border-left-color: #f1c40f;">
+                <h4 style="color: #f1c40f;">Mã nguồn mở (OSS)</h4>
+                <p style="font-size: 0.6em;">Tự do sử dụng, chỉnh sửa và chia sẻ. <br>Ví dụ: Linux, WordPress, VLC.</p>
+                <img src="photo-1542831371-29b0f74f9713.avif" style="height:150px;">
+            </div>
+            <div class="card fragment" style="width: 45%; border-left-color: #e74c3c;">
+                <h4 style="color: #e74c3c;">Mã nguồn đóng</h4>
+                <p style="font-size: 0.6em;">Bản quyền thuộc nhà sản xuất, phải trả phí. <br>Ví dụ: Windows, Adobe Suite.</p>
+                <img src="photo-1550751827-4bd374c3f58b.avif" style="height:150px;">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="hero-container" style="grid-template-columns: 1.2fr 1fr; align-items: center; gap: 30px;">
+            <div style="text-align: left;">
+                <h3 class="highlight">5. Kỷ nguyên mới: AI & Cloud</h3>
+                <div class="card fragment" style="margin-bottom: 15px;">
+                    <p style="font-size: 0.7em;"><strong>Phần mềm AI:</strong> Tích hợp trí tuệ nhân tạo (Machine Learning, NLP) để tự học và ra quyết định.</p>
+                </div>
+                <div class="card fragment">
+                    <p style="font-size: 0.7em;"><strong>Web Apps & Cloud:</strong> Chạy trực tiếp trên trình duyệt, dữ liệu đồng bộ thời gian thực.</p>
+                </div>
+            </div>
+            <div class="fragment">
+                <img src="photo-1677442136019-21780ecad995.jfif" 
+                     style="width: 100%; max-height: 350px; object-fit: cover; border-radius: 20px; border: 2px solid var(--software-color);">
+                <p style="font-size: 0.45em; margin-top: 10px; opacity: 0.8;">AI đang định nghĩa lại tương lai phần mềm</p>
+            </div>
+        </div>
+    </section>
+</section>
+            <section>
+    <section data-background-color="#073642">
+        <h2 class="highlight">PHẦN 3:ĐẶC TÍNH & CHẤT LƯỢNG PHẦN MỀM</h2>
+        <p style="font-size: 0.8em; opacity: 0.8;">Tiêu chuẩn ISO/IEC 25010 (SQuaRE)</p>
+        <img src="" 
+             style="max-height: 300px; border: none; box-shadow: none; background: white; padding: 10px;">
+    </section>
+        <section data-background-color="#002b36">
+    
+    <h3 class="highlight" style="margin-bottom: 10px;">Khung lý thuyết về Chất lượng & Đặc tính </h3>
+
+<div class="hero-container" style="
+    display: flex; 
+    align-items: flex-start; gap: 20px; width: 100%; 
+    height: 85vh; /* Giới hạn chiều cao tổng */
+    overflow-y: auto; /* An toàn: hiện thanh cuộn nếu nội dung quá dài trên màn hình bé */
+    padding-bottom: 20px;
+    box-sizing: border-box;">
+
+    <div style="flex: 1.5; text-align: left; font-size: 0.6em; line-height: 1.3;">
+        
+        <div class="fragment" style="border-left: 3px solid var(--software-color); padding-left: 10px; margin-bottom: 10px;">
+            <strong style="display: block; margin-bottom: 2px;">1.Chất lượng phần mềm:</strong> 
+            <p style="margin: 0; text-align: justify;">Là tổng thể các đặc điểm của sản phẩm nhằm thỏa mãn nhu cầu đã công bố hoặc tiềm ẩn của người dùng.</p>
+        </div>
+
+        <div class="fragment" style="border-left: 3px solid var(--software-color); padding-left: 10px; margin-bottom: 10px;">
+            <strong style="display: block; margin-bottom: 2px;">2.Đặc tính phần mềm:</strong> 
+            <p style="margin: 0; text-align: justify;">Là các thuộc tính kỹ thuật có thể phân tích và đo lường được, dùng để mô tả và đánh giá các khía cạnh khác nhau của chất lượng.</p>
+        </div>
+
+        <div class="fragment" style="border-left: 3px solid var(--software-color); padding-left: 10px;">
+            <strong style="display: block; margin-bottom: 2px;">3. Cải tiến liên tục (PDCA):</strong> 
+            <p style="margin: 0; text-align: justify;">Kiểm soát xuyên suốt: Lập kế hoạch -> Thực hiện -> Kiểm tra -> Điều chỉnh.</p>
+        </div>
+    </div>
+    
+    <div class="fragment" style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
+        
+        <div class="card" style="background: rgba(103, 232, 249, 0.1); border: 1px dashed var(--software-color); padding: 10px; border-radius: 6px;">
+            <p style="font-style: italic; font-size: 0.65em; color: var(--software-color); margin: 0 0 5px 0; line-height: 1.2;">"Chất lượng không phải là một đích đến, đó là một hành trình cải tiến không ngừng."</p>
+            <hr style="opacity: 0.3; margin: 5px 0;">
+            <p style="font-size: 0.5em; text-align: justify; margin: 0; line-height: 1.2;">Áp dụng ISO 25010 giúp doanh nghiệp có "thước đo" định lượng để đánh giá sản phẩm khách quan hơn.</p>
+        </div>
+
+        <div style="flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 10px;">
+             <img src="photo-1507925921958-8a62f3d1a50d.avif" 
+                  style="width: 100%; height: 100%; max-height: 250px; object-fit: cover; opacity: 0.8;">
+        </div>
+    </div>
+
+</div>
+</section>
+
+    <section>
+        <h3>1. Nhóm Đặc tính Vận hành</h3>
+        <div class="grid-3">
+            <div class="card fragment">
+                <h4 style="color: var(--software-color); font-size: 0.8em;">Functional Suitability</h4>
+                <p style="font-size: 0.6em;">Tính phù hợp chức năng: Đáp ứng đầy đủ và chính xác nhu cầu người dùng.</p>
+            </div>
+            <div class="card fragment">
+                <h4 style="color: var(--software-color); font-size: 0.8em;">Performance Efficiency</h4>
+                <p style="font-size: 0.6em;">Hiệu quả vận hành: Tốc độ xử lý nhanh, tốn ít tài nguyên CPU/RAM.</p>
+            </div>
+            <div class="card fragment">
+                <h4 style="color: var(--software-color); font-size: 0.8em;">Compatibility</h4>
+                <p style="font-size: 0.6em;">Tính tương thích: Có khả năng chạy chung hoặc trao đổi dữ liệu với hệ thống khác.</p>
+            </div>
+        </div>
+        <div class="fragment" style="margin-top: 20px;">
+            
+            <img src="Screenshot 2026-02-03 152656.png" 
+                 style="width:60%; height:200px; object-fit:cover;">
+        </div>
+    </section>
+
+    <section>
+        <h3>2. Nhóm Đặc tính Tin cậy</h3>
+        <div class="grid-3">
+            <div class="card fragment">
+                <h4 style="color: var(--software-color); font-size: 0.8em;">Reliability</h4>
+                <p style="font-size: 0.6em;">Độ tin cậy: Hoạt động ổn định, có khả năng phục hồi khi gặp sự cố.</p>
+            </div>
+            <div class="card fragment">
+                <h4 style="color: var(--software-color); font-size: 0.8em;">Security</h4>
+                <p style="font-size: 0.6em;">Bảo mật: Chống truy cập trái phép và bảo vệ tính toàn vẹn dữ liệu.</p>
+            </div>
+            <div class="card fragment">
+                <h4 style="color: var(--software-color); font-size: 0.8em;">Maintainability</h4>
+                <p style="font-size: 0.6em;">Khả năng bảo trì: Dễ dàng sửa lỗi, nâng cấp và thay đổi mã nguồn.</p>
+            </div>
+        </div>
+        <div class="fragment" style="margin-top: 20px;">
+            
+            <img src="photo-1555066931-4365d14bab8c.avif" 
+                 style="width:60%; height:200px; object-fit:cover;">
+        </div>
+    </section>
+
+    <section>
+        <h3>3. Nhóm Tương tác & Thích nghi</h3>
+        <div class="grid-3">
+            <div class="card fragment">
+                <h4 style="color: var(--software-color); font-size: 0.8em;">Usability</h4>
+                <p style="font-size: 0.6em;">Khả năng sử dụng: Giao diện thân thiện, dễ học và dễ thao tác.</p>
+            </div>
+            <div class="card fragment">
+                <h4 style="color: var(--software-color); font-size: 0.8em;">Portability</h4>
+                <p style="font-size: 0.6em;">Tính di động: Dễ dàng cài đặt hoặc chuyển vùng từ môi trường này sang môi trường khác.</p>
+            </div>
+            <div class="card fragment">
+                <h4 style="color: var(--software-color); font-size: 0.8em;">Safety</h4>
+                <p style="font-size: 0.6em;">Tính an toàn: Không gây nguy hiểm cho người dùng hoặc môi trường khi vận hành.</p>
+            </div>
+        </div>
+        <div class="fragment" style="margin-top: 20px;">
+            
+            <img src="Screenshot 2026-02-03 152755.png" 
+                 style="width:60%; height:200px; object-fit:cover;">
+        </div>
+    </section>
+    <section data-background-color="#002b36">
+    
+    <h3 class="highlight" style="margin-bottom: 10px;">Chất lượng trong sử dụng & Áp dụng thực tế</h3>
+
+<div class="hero-container" style="
+    display: flex; 
+    align-items: flex-start; gap: 20px; width: 100%; 
+    height: 85vh; /* Giới hạn chiều cao tổng */
+    overflow-y: auto; /* An toàn: hiện thanh cuộn nếu nội dung quá dài trên màn hình bé */
+    padding-bottom: 20px;
+    box-sizing: border-box;">
+
+    <div style="flex: 1.5; text-align: left; font-size: 0.6em; line-height: 1.3;">
+        
+        <div class="fragment" style="border-left: 3px solid var(--software-color); padding-left: 10px; margin-bottom: 10px;">
+            <strong style="display: block; margin-bottom: 2px;">1. Chất lượng trong sử dụng:</strong> 
+            <p style="margin: 0; text-align: justify;">Chất lượng cuối cùng quyết định bởi sự thỏa mãn của người dùng. Code "sạch" nhưng không giải quyết được việc cho khách vẫn là kém chất lượng.</p>
+        </div>
+
+        <div class="fragment" style="border-left: 3px solid var(--software-color); padding-left: 10px; margin-bottom: 10px;">
+            <strong style="display: block; margin-bottom: 2px;">2. Sự đánh đổi (Trade-off):</strong> 
+            <p style="margin: 0; text-align: justify;">Không thể tối ưu mọi thứ. Ví dụ: Tăng <strong>Bảo mật</strong> thường phải giảm <strong>Hiệu năng</strong> (do mã hóa).</p>
+        </div>
+
+        <div class="fragment" style="border-left: 3px solid var(--software-color); padding-left: 10px;">
+            <strong style="display: block; margin-bottom: 2px;">3. Cải tiến liên tục (PDCA):</strong> 
+            <p style="margin: 0; text-align: justify;">Kiểm soát xuyên suốt: Lập kế hoạch -> Thực hiện -> Kiểm tra -> Điều chỉnh.</p>
+        </div>
+    </div>
+    
+    <div class="fragment" style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
+        
+        <div class="card" style="background: rgba(103, 232, 249, 0.1); border: 1px dashed var(--software-color); padding: 10px; border-radius: 6px;">
+            <p style="font-style: italic; font-size: 0.65em; color: var(--software-color); margin: 0 0 5px 0; line-height: 1.2;">"Chất lượng không phải là một đích đến, đó là một hành trình cải tiến không ngừng."</p>
+            <hr style="opacity: 0.3; margin: 5px 0;">
+            <p style="font-size: 0.5em; text-align: justify; margin: 0; line-height: 1.2;">Áp dụng ISO 25010 giúp doanh nghiệp có "thước đo" định lượng để đánh giá sản phẩm khách quan hơn.</p>
+        </div>
+
+        <div style="flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 10px;">
+             <img src="photo-1507925921958-8a62f3d1a50d.avif" 
+                  style="width: 100%; height: 100%; max-height: 250px; object-fit: cover; opacity: 0.8;">
+        </div>
+    </div>
+
+</div>
+</section>
+</section>
+
+            <section>
+    <section data-background-color="#2c3e50">
+        <h2 class="highlight">PHẦN 4: VẤN ĐỀ VÀ GIẢI PHÁP</h2>
+        <p style="font-size: 0.8em; opacity: 0.8;">Từ Khủng hoảng Phần mềm đến Kỹ nghệ hiện đại</p>
+    </section>
+
+    <section>
+        <h3>4.1 Khủng hoảng Phần mềm</h3>
+        <div class="hero-container" style="grid-template-columns: 1.2fr 1fr; align-items: center;">
+            <div style="text-align: left; font-size: 0.6em;">
+                <p class="fragment"><strong>Bản chất:</strong> Xuất hiện khi phần cứng phát triển vượt bậc, vượt xa khả năng kiểm soát phần mềm theo phương pháp thủ công.</p>
+                <p class="fragment" style="color: #e74c3c; font-weight: bold; margin-top: 15px;">Các dấu hiệu thất bại:</p>
+                <ul>
+                    <li class="fragment"><strong>Dự toán sai lệch:</strong> Chi phí phát triển thực tế thường gấp nhiều lần ngân sách dự kiến ban đầu.</li>
+                    <li class="fragment"><strong>Trễ hạn:</strong> Các dự án lớn thường không thể bàn giao đúng ngày đã cam kết.</li>
+                    <li class="fragment"><strong>Khoảng cách giao tiếp:</strong>Khách hàng không biết diễn đạt yêu cầu, lập trình viên không hiểu nghiệp vụ dẫn đến sản phẩm làm ra không thể sử dụng.</li>
+                     <li class="fragment"><strong>Lỗi và Độ phức tạp:</strong>Càng sửa lỗi này thì lỗi khác lại phát sinh do cấu trúc code thiếu tính liên kết khoa học.</li>
+                </ul>
+            </div>
+            <div class="fragment">
+                
+                <img src="photo-1504384308090-c894fdcc538d.avif" 
+                     style="border-radius: 15px; border: 2px solid #e74c3c;">
+            </div>
+        </div>
+    </section>
+
+    <section>
+    <h3>4.2 Thách thức hiện đại</h3>
+    <div class="grid-3" style="gap: 20px; align-items: stretch;">
+        <div class="card fragment" style="display: flex; flex-direction: column; justify-content: center; min-height: 300px;">
+            <h4 style="color: #67e8f9; font-size: 0.8em; margin-bottom: 15px;">Tính kế thừa (Legacy)</h4>
+            <p style="font-size: 0.6em; line-height: 1.6;">Duy trì và nâng cấp các hệ thống cũ (như COBOL, Fortran) vốn đang vận hành các hạ tầng quan trọng mà không được phép xảy ra sai sót.</p>
+        </div>
+        
+        <div class="card fragment" style="display: flex; flex-direction: column; justify-content: center; min-height: 300px;">
+            <h4 style="color: #67e8f9; font-size: 0.8em; margin-bottom: 15px;">Tính đa dạng</h4>
+            <p style="font-size: 0.6em; line-height: 1.6;">Phần mềm phải thích xng với mạng lưới hỗn hợp gồm nhiều loại thiết bị (Mobile, IoT), trình duyệt và hệ điều hành khác nhau.</p>
+        </div>
+        
+        <div class="card fragment" style="display: flex; flex-direction: column; justify-content: center; min-height: 300px;">
+            <h4 style="color: #67e8f9; font-size: 0.8em; margin-bottom: 15px;">An toàn & Bảo mật</h4>
+            <p style="font-size: 0.6em; line-height: 1.6;">Đối mặt với rủi ro rò rỉ dữ liệu và tấn công mạng ngày càng tinh vi khi đưa hệ thống lên môi trường Cloud.</p>
+        </div>
+    </div>
+</section>
+
+    <section>
+        <h3>4.3 Định hướng Giải pháp</h3>
+        <div class="hero-container" style="grid-template-columns: 1fr 1fr; align-items: start;">
+            <div style="text-align: left; font-size: 0.65em;">
+                <p class="fragment"><strong>Kỹ thuật hóa Quy trình:</strong> Áp dụng <strong>Agile, Scrum, DevOps</strong> để chia nhỏ dự án và bàn giao nhanh.</p>
+                <p class="fragment"><strong>Công cụ CASE:</strong> Sử dụng IDE hiện đại, Git, Jenkins, UML để tự động hóa và quản lý thiết kế.</p>
+                <p class="fragment"><strong>Tiêu chuẩn hóa:</strong> Áp dụng các bộ quy tắc quốc tế về chất lượng và an toàn thông tin.</p>
+            </div>
+            <div class="fragment">
+                
+                <img src="photo-1552664730-d307ca884978.avif" 
+                     style="border-radius: 10px; border: 1px solid var(--software-color);">
+                <p style="font-size: 0.4em; opacity: 0.7; margin-top: 10px;">Quy trình chuyên nghiệp (DevOps) là giải pháp hàng đầu</p>
+            </div>a
+        </div>
+    </section>
+
+    <section data-background-color="#002b36">
+        <h3 class="highlight">Tầm quan trọng của Software Engineering</h3>
+        <div class="card" style="padding: 25px; border-radius: 20px; background: rgba(255,255,255,0.05); text-align: left;">
+            <ul style="font-size: 0.75em; line-height: 1.6;">
+                <li class="fragment"><strong>Tính kỷ luật:</strong> Thay thế sự "ngẫu hứng" bằng quy trình kỹ nghệ khắt khe.</li>
+                <li class="fragment"><strong>Khả năng dự đoán:</strong> Giúp kiểm soát chi phí, thời gian và rủi ro ngay từ đầu.</li>
+                <li class="fragment"><strong>Tính bền vững:</strong> Đảm bảo phần mềm có thể bảo trì và nâng cấp trong hàng chục năm.</li>
+            </ul>
+        </div>
+        <p class="fragment" style="margin-top: 30px; font-size: 0.8em; color: var(--software-color); font-weight: bold; font-style: italic;">
+            "Software Engineering không chỉ là lập trình, đó là kỹ nghệ giải quyết vấn đề."
+        </p>
+    </section>
+</section>
+
+                <section data-background-image="photo-1516321318423-f06f85e504b3.avif" data-background-opacity="0.2">
+                 <h1 class="highlight" style="font-size: 2.5em;">thank you!</h1>
+                    <p>for watching</p>
+                    <hr style="width: 30%; border: 1px solid #3498db;">
+                    <div style="margin-top: 30px; font-size: 0.8em;">
+                    <p>Bạn có câu hỏi nào dành cho mình không?</p>
+                    </div>
+                    <div class="fragment" style="margin-top: 50px; color: #3498db; font-weight: bold;">
+                    Q & A
+                    </div>
+                 </section>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'convex',
+            backgroundTransition: 'fade',
+            dependencies: []
+        });
+    </script>
+</body>
+
+</html>
