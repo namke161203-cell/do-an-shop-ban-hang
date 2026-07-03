@@ -1,5 +1,4 @@
-<<<<<<< HEAD
+
 Code cua Nam duoi may tinh
-=======
 Code cua ban Minh tren web
->>>>>>> 4b399678e0a25935ad8f9311b65d5d2a4e7411a0
+
