@@ -1,1 +1,5 @@
-Code do ban Minh sua tren mang.
+<<<<<<< HEAD
+Code do chinh minh sua duoi may
+=======
+Code do ban A sua tren mang
+>>>>>>> abcxyz123...
